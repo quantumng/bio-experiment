@@ -1,9 +1,4 @@
 import './style.css';
-console.log('init', $, $('.add-sample'));
-
-// $('button').on('tap', function(){
-//     console.log('....');
-// })
 
 $('.add-sample').on('tap', function() {
     $('.tester .drop').animate({
@@ -42,4 +37,8 @@ $('.pass-ctrl').on('tap', function(){
     }, 'slow', 'linear', function(){
         $('.line-two').show();
     });
+});
+
+$('.reset').on('tap', function(){
+    window.location.reload();
 });

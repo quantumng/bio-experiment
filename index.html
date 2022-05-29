@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="operation">
+        <p>依次点击按钮（模拟答题）</p>
+        <button class="btn add-sample">滴加样品</button>
+        <button class="btn add-anti">金标抗体</button>
+        <button class="btn pass-test">过测试线</button>
+        <button class="btn pass-ctrl">过质控线</button>
+      </div>
+      <div class="tester">
+        <div class="drop"></div>
+        <div class="sample"></div>
+        <div class="samples green">
+          <span class="samples-item"></span>
+          <span class="samples-item"></span>
+          <span class="samples-item"></span>
+          <span class="samples-item"></span>
+        </div>
+        <div class="samples gold">
+          <span class="samples-item"></span>
+          <span class="samples-item"></span>
+          <span class="samples-item"></span>
+          <span class="samples-item"></span>
+        </div>
+        <div class="line-zone">
+          <div class="line-one-wrapper">
+            <div class="line-one"></div>
+          </div>
+          <div class="line-two-wrapper">
+            <div class="line-two"></div>
+          </div>
+        </div>
+        <img class="pad" src="./assets/covid-19-test.png" alt="tester" width="360">
+      </div>
+    </div>
+    
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/zepto/1.2.0/zepto.js"></script> -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/zepto/1.2.0/zepto.min.js"></script> -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script> -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script type="module" src="./assets/zepto.new.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
